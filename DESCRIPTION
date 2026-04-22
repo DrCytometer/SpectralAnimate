@@ -1,0 +1,39 @@
+Package: SpectralAnimate
+Type: Package
+Title: Add-on Animation Tools For Spectral Unmixing
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Oliver", "Burton",
+      email = "olivertburton@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Add on package to AutoSpectral to animate some of the graphics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    flowWorkspace,
+    ggplot2,
+    gganimate,
+    dplyr,
+    tidyr,
+    cowplot,
+    ragg,
+    tibble,
+    magick,
+    scales
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/DrCytometer/SpectralAnimate
+BugReports: https://github.com/DrCytometer/SpectralAnimate/issues
+Depends:
+    R (>= 4.1.0)
+Suggests:
+    AutoSpectral,
+    knitr,
+    rmarkdown,
+    gifski
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown
